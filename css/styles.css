@@ -1,0 +1,295 @@
+/* Custom properties for brand colors */
+:root {
+    --color-dark-bg: #1a1a2e; /* Deep purple-black background */
+    --color-dark-card: #16213e; /* Slightly lighter card/header background */
+    --color-primary-light: #e8e8e8; /* Text color */
+    --color-accent-purple: #a742e8; /* Gradient start */
+    --color-accent-blue: #6d33ee; /* Gradient end */
+}
+
+/* Basic Reset and Fonts */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--color-dark-bg);
+    color: var(--color-primary-light);
+    line-height: 1.6;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: var(--color-dark-card);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    position: sticky; /* Sticky header for better navigation */
+    top: 0;
+    z-index: 1000;
+}
+
+/* Logo Image Styling */
+.logo .logo-img {
+    height: auto; /* Maintains the logo's proportion */
+    width: 180px; /* <--- MODIFIED: Try 180px, then adjust if needed */
+    max-width: 100%;
+}
+
+.logo h1 {
+    font-size: 1.8em;
+    color: var(--color-accent-purple);
+    margin: 0;
+}
+
+.logo p {
+    font-size: 0.8em;
+    color: var(--color-primary-light);
+    margin: 0;
+    opacity: 0.7;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+nav a {
+    color: var(--color-primary-light);
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: var(--color-accent-purple);
+}
+
+/* Call to Action Buttons */
+.cta-button {
+    display: inline-block;
+    padding: 12px 30px;
+    margin: 10px 5px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 8px; /* Slightly rounded corners */
+    transition: transform 0.3s, box-shadow 0.3s;
+    text-transform: uppercase;
+}
+
+/* Primary CTA: High Contrast Blue/Purple Gradient */
+.primary {
+    /* Set the gradient */
+    background: linear-gradient(45deg, var(--color-accent-purple), var(--color-accent-blue));
+    color: white;
+    border: none;
+    box-shadow: 0 4px 15px rgba(109, 51, 238, 0.4); /* Shadow for pop */
+}
+
+.primary:hover {
+    transform: scale(1.05); /* Slight lift on hover */
+    box-shadow: 0 6px 20px rgba(109, 51, 238, 0.6);
+}
+
+/* Secondary CTA: Transparent/Outline Style */
+.secondary {
+    background-color: transparent;
+    border: 2px solid var(--color-accent-purple);
+    color: var(--color-accent-purple);
+}
+
+.secondary:hover {
+    background-color: rgba(167, 66, 232, 0.1);
+    transform: translateY(-2px);
+}
+
+.large {
+    font-size: 1.1em;
+    padding: 15px 40px;
+}
+
+/* Hero Section Styling */
+#hero {
+    padding: 120px 50px;
+    text-align: center;
+    /* Blend the dark background with the gradient */
+    background: radial-gradient(circle at center, #0f3460 0%, var(--color-dark-bg) 70%);
+}
+
+#hero h2 {
+    font-size: 3.5em;
+    margin-bottom: 20px;
+}
+
+#hero p {
+    font-size: 1.3em;
+    margin-bottom: 40px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* General Section Styling */
+section {
+    padding: 80px 50px;
+    margin: 0 auto;
+    max-width: 1200px;
+    text-align: center;
+}
+
+section h3 {
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: var(--color-accent-purple);
+}
+
+/* Paradox Section - Grid Layout */
+#paradox .paradox-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-top: 50px;
+}
+.paradox-item {
+    background-color: var(--color-dark-card);
+    padding: 35px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+    /* Use the accent color for a left-side highlight */
+    border-left: 5px solid var(--color-accent-purple); 
+    text-align: left; /* Align text within the card */
+    min-height: 220px; /* Ensure cards are uniform height */
+}
+
+.paradox-item h4 {
+    color: #990cd1; /* Red color for 'Challenge' emphasis */
+    font-size: 1.4em;
+    margin-top: 0;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.challenge-data {
+    font-size: 0.95em;
+    margin-bottom: 15px;
+    opacity: 0.7;
+}
+
+.solution-text {
+    font-size: 1em;
+    font-weight: bold;
+    color: #2ecc71; /* Green color for 'Solution' emphasis */
+    padding-top: 10px;
+    border-top: 1px dashed rgba(255, 255, 255, 0.2); /* Separator line */
+}
+
+#paradox .paradox-list > div {
+    background-color: var(--color-dark-card);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    border-top: 4px solid var(--color-accent-blue);
+}
+/* Logo Container - Enables side-by-side alignment */
+.logo {
+    display: flex;
+    align-items: center; /* Vertically align items in the middle */
+}
+
+/* Styling for the logo icon image */
+.logo-icon {
+    width: 50px; /* Reduced size for the icon */
+    height: 50px;
+    margin-right: 10px;
+    filter: drop-shadow(0 0 5px rgba(109, 51, 238, 0.6)); /* Keep the glow effect */
+}
+
+/* Styling for the text block */
+.logo-text {
+    display: flex;
+    flex-direction: column; /* Stack name and tagline vertically */
+    line-height: 1.2;
+}
+
+.logo-name {
+    font-size: 1.5em; /* Larger, dominant name */
+    font-weight: bold;
+    color: var(--color-accent-purple); /* Highlight the name with accent color */
+}
+
+.logo-tagline {
+    font-size: 0.8em; /* Smaller tagline */
+    color: var(--color-primary-light);
+    opacity: 0.8;
+}
+
+/* Footer Styling */
+/* Footer Styles */
+footer {
+    padding: 60px 50px 20px; /* Adjust padding to separate from body */
+    background-color: var(--color-dark-card);
+    text-align: center;
+}
+
+/* Styles for the large CTA area in the footer */
+.footer-cta {
+    padding-bottom: 40px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1); /* Subtle separator line */
+    margin-bottom: 40px;
+}
+
+.footer-cta h3 {
+    color: var(--color-primary-light);
+    font-size: 1.8em;
+    margin-bottom: 20px;
+}
+
+/* 3-Column Navigation Layout */
+.footer-nav {
+    display: flex;
+    justify-content: space-between;
+    max-width: 900px;
+    margin: 0 auto 40px;
+    text-align: left; /* Align text left within columns */
+}
+
+.footer-column {
+    width: 30%;
+}
+
+.footer-column h4 {
+    font-size: 1.1em;
+    color: var(--color-accent-purple);
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    border-bottom: 2px solid rgba(167, 66, 232, 0.3); /* Underline header */
+    padding-bottom: 5px;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-column ul li {
+    margin-bottom: 8px;
+}
+
+.footer-column a {
+    color: var(--color-primary-light);
+    text-decoration: none;
+    opacity: 0.7;
+    transition: opacity 0.3s;
+}
+
+.footer-column a:hover {
+    opacity: 1;
+    color: var(--color-accent-purple);
+}
+
+.copyright {
+    margin-top: 20px;
+    font-size: 0.8em;
+    opacity: 0.5;
+}
