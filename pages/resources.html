@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resources & Insights - QUALIGENAI</title>
+    <link rel="stylesheet" href="../css/styles.css"> 
+    <style>
+        /* Resources Page Specific Styles */
+        #resources-hero { text-align: center; padding-bottom: 50px; }
+        #resources-hero h1 { font-size: 3em; margin-bottom: 10px; }
+        #resources-hero .sub-headline { font-size: 1.2em; max-width: 900px; margin: 0 auto 40px; opacity: 0.9; }
+
+        .resource-section {
+            padding: 40px 0;
+            margin-bottom: 50px;
+            border-bottom: 1px dashed rgba(255, 255, 255, 0.2);
+            text-align: left;
+        }
+
+        .resource-section h2 {
+            font-size: 2.2em;
+            color: var(--color-accent-blue);
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        .document-card {
+            background-color: var(--color-dark-card);
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 15px;
+            border-left: 5px solid var(--color-accent-purple);
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .document-card-content {
+            width: 70%;
+        }
+
+        .document-card h3 {
+            font-size: 1.2em;
+            color: var(--color-primary-light);
+            margin: 0 0 5px 0;
+        }
+
+        .document-card p {
+            font-size: 0.9em;
+            opacity: 0.8;
+            margin: 0;
+        }
+
+        .document-card .agent-tags {
+            font-size: 0.75em;
+            color: #2ecc71; /* Green for tags */
+            margin-top: 5px;
+            font-weight: bold;
+        }
+
+        .document-card .card-cta {
+            width: 25%;
+            text-align: right;
+        }
+
+        .document-card .card-cta a {
+            display: inline-block;
+            padding: 8px 15px;
+            background-color: var(--color-accent-purple);
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            font-size: 0.9em;
+            transition: background-color 0.3s;
+        }
+        
+        .outcome-snapshot {
+            display: block;
+            margin-top: 5px;
+            font-style: italic;
+            color: #f39c12; /* Amber/Orange for Outcome */
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <img src="../img/logo.png" alt="QUALIGENAI Icon" class="logo-icon">
+            <div class="logo-text">
+                <span class="logo-name">QUALIGENAI</span>
+                <span class="logo-tagline">AI Agents for Every Dimension of Quality.</span>
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="our-agents.html">Our Agents</a></li>
+                <li><a href="solutions.html">Solutions</a></li>
+                <li><a href="why-us.html">Why QUALIGENAI?</a></li>
+                <li><a href="resources.html">Resources</a></li>
+            </ul>
+        </nav>
+        <a href="#poc" class="cta-button primary">Request Demo &rarr;</a>
+    </header>
+
+    <section id="resources-hero" class="hero">
+        <h1>The Intelligence Library: Deep Dives into Autonomous Quality. </h1>
+        <p class="sub-headline">Access our exclusive whitepapers, case studies, and guides designed to help engineering leaders strategize and implement next-generation AI-driven quality solutions. </p>
+        <a href="#" class="cta-button large primary">Subscribe to our Newsletter &rarr; </a>
+    </section>
+
+    <section class="resource-section">
+        <h2>🧠 Whitepapers & Strategic Guides</h2>
+        
+        <div class="document-card">
+            <div class="document-card-content">
+                <h3>The Unseen Cost of Quality: The Business Case for AI-Driven QE</h3>
+                <p>Executive guide on calculating the Cost of Poor Quality (COPQ) and projecting ROI from AI testing adoption. </p>
+                <span class="agent-tags">Relevant Agents: Strategic Analyst, Process Optimizer </span>
+            </div>
+            <div class="card-cta">
+                <a href="#">Download Whitepaper </a>
+            </div>
+        </div>
+
+        <div class="document-card">
+            <div class="document-card-content">
+                <h3>The 5 Phases of AI-Powered Test Transformation</h3>
+                <p>A prescriptive roadmap for moving from traditional QA to an autonomous Quality Engineering (QE) organization. </p>
+                <span class="agent-tags">Relevant Agents: Process Optimizer, Flow Enabler </span>
+            </div>
+            <div class="card-cta">
+                <a href="#">Read Guide </a>
+            </div>
+        </div>
+
+        <div class="document-card">
+            <div class="document-card-content">
+                <h3>Best Practices for Algorithmic Fairness and Bias Testing</h3>
+                <p>Deep dive into testing ethical AI: detecting, quantifying, and mitigating bias in ML models and GenAI outputs. </p>
+                <span class="agent-tags">Relevant Agents: Model Validator, Generative Guardian </span>
+            </div>
+            <div class="card-cta">
+                <a href="#">Download Whitepaper </a>
+            </div>
+        </div>
+
+        <div class="document-card">
+            <div class="document-card-content">
+                <h3>Governance and Quality in Low-Code Platforms</h3>
+                <p>How to ensure security and maintainability when accelerating development with low-code/no-code tools. </p>
+                <span class="agent-tags">Relevant Agents: Innovation Engine </span>
+            </div>
+            <div class="card-cta">
+                <a href="#">Read Guide </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="resource-section">
+        <h2>📈 Case Studies & Success Stories</h2>
+        
+        <div class="document-card">
+            <div class="document-card-content">
+                <h3>Achieving 99.999% Uptime with AI-Driven Resilience Testing (SaaS/FinTech)</h3>
+                <p>Reduced cloud infrastructure testing costs by 35% and improved application reliability. </p>
+                <span class="agent-tags">Key Agent Highlighted: Cloud Sentinel </span>
+                <span class="outcome-snapshot">Outcome Snapshot: Reduced cloud infrastructure testing costs by 35%. </span>
+            </div>
+            <div class="card-cta">
+                <a href="#">View Case Study</a>
+            </div>
+        </div>
+
+        <div class="document-card">
+            <div class="document-card-content">
+                <h3>Cutting Data Defects by 60% in a 10PB Data Lake (Data Analytics)</h3>
+                <p>Eliminated ingestion errors and guaranteed end-to-end data fidelity at massive scale. </p>
+                <span class="agent-tags">Key Agents Highlighted: Data Alchemist, Transformation Verifier </span>
+                <span class="outcome-snapshot">Outcome Snapshot: Eliminated ingestion errors and guaranteed end-to-end data fidelity. </span>
+            </div>
+            <div class="card-cta">
+                <a href="#">View Case Study</a>
+            </div>
+        </div>
+
+        <div class="document-card">
+            <div class="document-card-content">
+                <h3>Gaining 100% Visual Consistency Across 300+ Devices (E-Commerce/Mobile)</h3>
+                <p>Accelerated mobile releases and drastically reduced UI/UX defects across a complex device matrix. </p>
+                <span class="agent-tags">Key Agents Highlighted: Digital Empath, Device Maestro </span>
+                <span class="outcome-snapshot">Outcome Snapshot: Achieved 100% visual consistency across 500+ device profiles. </span>
+            </div>
+            <div class="card-cta">
+                <a href="#">View Case Study</a>
+            </div>
+        </div>
+
+        <div class="document-card">
+            <div class="document-card-content">
+                <h3>Accelerating Medical Device Submission by 6 Months (MedTech)</h3>
+                <p>Automated traceability and validation to meet strict IEC 62304 and FDA regulatory requirements. </p>
+                <span class="agent-tags">Key Agent Highlighted: Compliance Conductor </span>
+                <span class="outcome-snapshot">Outcome Snapshot: Cut FDA submission time by 6 months. </span>
+            </div>
+            <div class="card-cta">
+                <a href="#">View Case Study</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="resource-section">
+        <h2>🛠️ Technical Briefs & Implementation Tools</h2>
+        
+        <div class="document-card">
+            <div class="document-card-content">
+                <h3>The Essential Role of AI in Microservices Quality Assurance</h3>
+                <p>Technical brief on automating API testing, security fuzzing, and dependency validation in service-mesh architectures. </p>
+                <span class="agent-tags">Relevant Agents: API Guardian, Automation Architect </span>
+            </div>
+            <div class="card-cta">
+                <a href="#">Download Technical Brief </a>
+            </div>
+        </div>
+
+        <div class="document-card">
+            <div class="document-card-content">
+                <h3>Whitepaper: AI for Resource Optimization in Embedded Systems Testing</h3>
+                <p>Techniques for memory leak detection, resource monitoring, and co-verification in hardware-constrained devices. </p>
+                <span class="agent-tags">Relevant Agents: Embedded Expert, IoT Testing </span>
+            </div>
+            <div class="card-cta">
+                <a href="#">Download Whitepaper </a>
+            </div>
+        </div>
+
+        <div class="document-card">
+            <div class="document-card-content">
+                <h3>Guide to Implementing Self-Healing Test Automation</h3>
+                <p>Step-by-step guide to integrate AI-driven self-healing capabilities into popular test frameworks (e.g., Selenium, Playwright). </p>
+                <span class="agent-tags">Relevant Agent: Automation Architect </span>
+            </div>
+            <div class="card-cta">
+                <a href="#">View Implementation Guide </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-final">
+        <h2>Don't See What You Need? </h2>
+        <p>Our research team is constantly developing new insights into the evolving world of Quality Engineering. </p>
+        <a href="#" class="cta-button primary large">Contact Us to Discuss Custom Research Needs &rarr; </a>
+        <p class="small-link">View our upcoming webinars and events. </p>
+    </section>
+
+    <footer>
+      <div class="footer-cta">
+        <h3>Ready to future-proof your quality?</h3>
+        <a href="#poc" class="cta-button primary large">Start a Proof of Concept (PoC) &rarr;</a>
+    </div>
+
+    <div class="footer-nav">
+        <div class="footer-column">
+            <h4>Agents Directory</h4>
+            <ul>
+                <li><a href="#">Functional Testing</a></li>
+                <li><a href="#">Test Automation</a></li>
+                <li><a href="#">Performance Testing</a></li>
+                <li><a href="#">...and 18 more specialized Agents</a></li>
+            </ul>
+        </div>
+        
+        <div class="footer-column">
+            <h4>Company</h4>
+            <ul>
+                <li><a href="#">About QUALIGENAI</a></li>
+                <li><a href="#">Our Methodology</a></li>
+                <li><a href="#">Careers</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+        
+        <div class="footer-column">
+            <h4>Resources</h4>
+            <ul>
+                <li><a href="#">Blog & Insights</a></li>
+                <li><a href="#">Case Studies</a></li>
+                <li><a href="#">Whitepapers</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>&copy; 2025 QUALIGENAI. All Rights Reserved.</p>
+    </div>
+</footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const navLinks = document.querySelectorAll('nav a');
+            
+            const currentPath = window.location.pathname.toLowerCase(); 
+            const currentFile = currentPath.substring(currentPath.lastIndexOf('/') + 1);
+
+            navLinks.forEach(link => {
+                let linkHref = link.getAttribute('href');
+                if (!linkHref) return;
+
+                let targetFile = '';
+
+                if (linkHref.lastIndexOf('/') !== -1) {
+                    targetFile = linkHref.substring(linkHref.lastIndexOf('/') + 1);
+                } else {
+                    targetFile = linkHref;
+                }
+                
+                targetFile = targetFile.toLowerCase();
+
+                if (currentFile === targetFile) {
+                    link.classList.add('active');
+                } 
+                else if (targetFile === 'index.html' && currentFile === '') {
+                    link.classList.add('active');
+                }
+            });
+        });
+    </script>
+
+</body>
+</html>
